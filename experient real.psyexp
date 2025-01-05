@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2024.2.4">
+  <Settings>
+    <Param val="3" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="Thank you for your patience." valType="str" updates="None" name="End Message"/>
+    <Param val="{'participant':'f&quot;{randint(0, 999999):06.0f}&quot;', 'session':'001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="(1024, 768)" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+    <Param val="" valType="str" updates="None" name="backgroundImg"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="float" valType="str" updates="None" name="clockFormat"/>
+    <Param val="{'thisRow.t': 'priority.CRITICAL', 'expName': 'priority.LOW'}" valType="dict" updates="None" name="colPriority"/>
+    <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="warning" valType="code" updates="None" name="consoleLoggingLevel"/>
+    <Param val="default" valType="str" updates="None" name="ecSampleRate"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="experient real" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="" valType="code" updates="None" name="frameRate"/>
+    <Param val="Attempting to measure frame rate of screen, please wait..." valType="str" updates="None" name="frameRateMsg"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="info" valType="code" updates="None" name="logging level"/>
+    <Param val="True" valType="bool" updates="None" name="measureFrameRate"/>
+    <Param val="MIDDLE_BUTTON" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="neon.local" valType="str" updates="None" name="plCompanionAddress"/>
+    <Param val="8080" valType="num" updates="None" name="plCompanionPort"/>
+    <Param val="True" valType="bool" updates="None" name="plCompanionRecordingEnabled"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="0" valType="code" updates="None" name="runMode"/>
+    <Param val="False" valType="bool" updates="None" name="rush"/>
+    <Param val="time" valType="str" updates="None" name="sortColumns"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+    <Param val="pyglet" valType="str" updates="None" name="winBackend"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <RoutineSettingsComponent name="trial" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="trial" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="from psychopy import visual, core, event, data&amp;#10;import random&amp;#10;import csv&amp;#10;import os&amp;#10;&amp;#10;# Paths to image directories&amp;#10;realistic_correct_dir = '/mnt/data/realistic_photos/correct_cuts'&amp;#10;realistic_wrong_dir = '/mnt/data/realistic_photos/wrong_cuts'&amp;#10;abstract_correct_dir = '/mnt/data/abstract_photos/correct_cuts'&amp;#10;abstract_wrong_dir = '/mnt/data/abstract_photos/wrong_cuts'&amp;#10;&amp;#10;# Load image file paths&amp;#10;realistic_correct_images = [os.path.join(realistic_correct_dir, f) for f in os.listdir(realistic_correct_dir)]&amp;#10;realistic_wrong_images = [os.path.join(realistic_wrong_dir, f) for f in os.listdir(realistic_wrong_dir)]&amp;#10;abstract_correct_images = [os.path.join(abstract_correct_dir, f) for f in os.listdir(abstract_correct_dir)]&amp;#10;abstract_wrong_images = [os.path.join(abstract_wrong_dir, f) for f in os.listdir(abstract_wrong_dir)]&amp;#10;&amp;#10;# Combine images into a trial list&amp;#10;trials = []&amp;#10;for correct, wrong in zip(realistic_correct_images, realistic_wrong_images):&amp;#10;    trials.append({&quot;image_type&quot;: &quot;familiar&quot;, &quot;correct&quot;: correct, &quot;wrong&quot;: wrong})&amp;#10;for correct, wrong in zip(abstract_correct_images, abstract_wrong_images):&amp;#10;    trials.append({&quot;image_type&quot;: &quot;abstract&quot;, &quot;correct&quot;: correct, &quot;wrong&quot;: wrong})&amp;#10;&amp;#10;# Randomize trial order&amp;#10;random.shuffle(trials)&amp;#10;&amp;#10;# Window setup&amp;#10;win = visual.Window(size=(800, 600), color=(1, 1, 1), units=&quot;pix&quot;)&amp;#10;&amp;#10;# Instructions&amp;#10;instructions = visual.TextStim(win, text=&quot;In this task, you will see an incomplete image and two options to complete it.\n\nUse the keys 1 (left) and 2 (right) to select the correct piece.\n\nPress any key to start.&quot;, color=(-1, -1, -1))&amp;#10;instructions.draw()&amp;#10;win.flip()&amp;#10;event.waitKeys()&amp;#10;&amp;#10;# Determine if participant is in warm-up group&amp;#10;warm_up = random.choice([True, False])&amp;#10;warm_up_message = &quot;You are part of the warm-up group.&quot; if warm_up else &quot;You will proceed directly to the experiment.&quot;&amp;#10;warm_up_text = visual.TextStim(win, text=warm_up_message, color=(-1, -1, -1))&amp;#10;warm_up_text.draw()&amp;#10;win.flip()&amp;#10;core.wait(2)&amp;#10;&amp;#10;# Trial setup&amp;#10;results = []&amp;#10;clock = core.Clock()&amp;#10;&amp;#10;for trial in trials:&amp;#10;    # Randomize left/right positions for correct and wrong images&amp;#10;    positions = [(-200, 0), (200, 0)]&amp;#10;    random.shuffle(positions)&amp;#10;&amp;#10;    correct_position = positions[0]&amp;#10;    wrong_position = positions[1]&amp;#10;&amp;#10;    correct_image = visual.ImageStim(win, image=trial[&quot;correct&quot;], pos=correct_position, size=(200, 200))&amp;#10;    wrong_image = visual.ImageStim(win, image=trial[&quot;wrong&quot;], pos=wrong_position, size=(200, 200))&amp;#10;&amp;#10;    # Display images&amp;#10;    correct_image.draw()&amp;#10;    wrong_image.draw()&amp;#10;    win.flip()&amp;#10;&amp;#10;    # Record response&amp;#10;    clock.reset()&amp;#10;    keys = event.waitKeys(keyList=[&quot;1&quot;, &quot;2&quot;], timeStamped=clock)&amp;#10;&amp;#10;    # Determine correctness&amp;#10;    response = keys[0][0]&amp;#10;    rt = keys[0][1]&amp;#10;    correct = (response == &quot;1&quot; and correct_position == (-200, 0)) or (response == &quot;2&quot; and correct_position == (200, 0))&amp;#10;&amp;#10;    # Save trial data&amp;#10;    results.append({&amp;#10;        &quot;participant_id&quot;: &quot;001&quot;,  # Replace with actual participant ID system if needed&amp;#10;        &quot;warm_up&quot;: warm_up,&amp;#10;        &quot;image_type&quot;: trial[&quot;image_type&quot;],&amp;#10;        &quot;correct_position&quot;: &quot;left&quot; if correct_position == (-200, 0) else &quot;right&quot;,&amp;#10;        &quot;response&quot;: response,&amp;#10;        &quot;correct&quot;: correct,&amp;#10;        &quot;reaction_time&quot;: rt&amp;#10;    })&amp;#10;&amp;#10;    # Clear screen&amp;#10;    win.flip()&amp;#10;    core.wait(0.5)&amp;#10;&amp;#10;# Calculate summary statistics&amp;#10;familiar_trials = [r for r in results if r[&quot;image_type&quot;] == &quot;familiar&quot;]&amp;#10;abstract_trials = [r for r in results if r[&quot;image_type&quot;] == &quot;abstract&quot;]&amp;#10;&amp;#10;def calc_stats(trials):&amp;#10;    correct_trials = [t for t in trials if t[&quot;correct&quot;]]&amp;#10;    accuracy = len(correct_trials) / len(trials) * 100&amp;#10;    reaction_times = [t[&quot;reaction_time&quot;] for t in trials]&amp;#10;    avg_rt = sum(reaction_times) / len(reaction_times)&amp;#10;    std_rt = (sum((x - avg_rt) ** 2 for x in reaction_times) / len(reaction_times)) ** 0.5&amp;#10;    return accuracy, avg_rt, std_rt&amp;#10;&amp;#10;familiar_acc, familiar_avg_rt, familiar_std_rt = calc_stats(familiar_trials)&amp;#10;abstract_acc, abstract_avg_rt, abstract_std_rt = calc_stats(abstract_trials)&amp;#10;gap_accuracy = familiar_acc - abstract_acc&amp;#10;gap_rt = familiar_avg_rt - abstract_avg_rt&amp;#10;&amp;#10;# Save results to CSV&amp;#10;csv_file = &quot;results.csv&quot;&amp;#10;with open(csv_file, mode=&quot;w&quot;, newline=&quot;&quot;) as file:&amp;#10;    writer = csv.DictWriter(file, fieldnames=[&amp;#10;        &quot;participant_id&quot;, &quot;warm_up&quot;, &quot;image_type&quot;, &quot;correct_position&quot;, &quot;response&quot;, &quot;correct&quot;, &quot;reaction_time&quot;&amp;#10;    ])&amp;#10;    writer.writeheader()&amp;#10;    writer.writerows(results)&amp;#10;&amp;#10;    # Add summary statistics&amp;#10;    writer.writerow({})  # Blank row&amp;#10;    writer.writerow({&amp;#10;        &quot;participant_id&quot;: &quot;001&quot;,&amp;#10;        &quot;warm_up&quot;: warm_up,&amp;#10;        &quot;image_type&quot;: &quot;Summary&quot;,&amp;#10;        &quot;correct_position&quot;: &quot;&quot;,&amp;#10;        &quot;response&quot;: &quot;&quot;,&amp;#10;        &quot;correct&quot;: f&quot;Familiar Accuracy: {familiar_acc:.2f}%&quot;,&amp;#10;        &quot;reaction_time&quot;: f&quot;Familiar Avg RT: {familiar_avg_rt:.2f} ms, Familiar Std RT: {familiar_std_rt:.2f} ms&quot;&amp;#10;    })&amp;#10;    writer.writerow({&amp;#10;        &quot;participant_id&quot;: &quot;001&quot;,&amp;#10;        &quot;warm_up&quot;: warm_up,&amp;#10;        &quot;image_type&quot;: &quot;Summary&quot;,&amp;#10;        &quot;correct_position&quot;: &quot;&quot;,&amp;#10;        &quot;response&quot;: &quot;&quot;,&amp;#10;        &quot;correct&quot;: f&quot;Abstract Accuracy: {abstract_acc:.2f}%&quot;,&amp;#10;        &quot;reaction_time&quot;: f&quot;Abstract Avg RT: {abstract_avg_rt:.2f} ms, Abstract Std RT: {abstract_std_rt:.2f} ms&quot;&amp;#10;    })&amp;#10;    writer.writerow({&amp;#10;        &quot;participant_id&quot;: &quot;001&quot;,&amp;#10;        &quot;warm_up&quot;: warm_up,&amp;#10;        &quot;image_type&quot;: &quot;Gap&quot;,&amp;#10;        &quot;correct_position&quot;: &quot;&quot;,&amp;#10;        &quot;response&quot;: &quot;&quot;,&amp;#10;        &quot;correct&quot;: f&quot;Accuracy Gap: {gap_accuracy:.2f}%&quot;,&amp;#10;        &quot;reaction_time&quot;: f&quot;RT Gap: {gap_rt:.2f} ms&quot;&amp;#10;    })&amp;#10;&amp;#10;# Close window&amp;#10;win.close()&amp;#10;core.quit()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <CodeComponent name="code_2" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="from psychopy import visual, core, event, data, monitors&amp;#10;import random&amp;#10;import csv&amp;#10;import os&amp;#10;&amp;#10;# Define current directory&amp;#10;_thisDir = os.path.dirname(os.path.abspath(__file__))&amp;#10;os.chdir(_thisDir)&amp;#10;&amp;#10;# Paths to image directories&amp;#10;realistic_correct_dir = '/mnt/data/realistic_photos/correct_cuts'&amp;#10;realistic_wrong_dir = '/mnt/data/realistic_photos/wrong_cuts'&amp;#10;abstract_correct_dir = '/mnt/data/abstract_photos/correct_cuts'&amp;#10;abstract_wrong_dir = '/mnt/data/abstract_photos/wrong_cuts'&amp;#10;&amp;#10;# Load image file paths&amp;#10;realistic_correct_images = [os.path.join(realistic_correct_dir, f) for f in os.listdir(realistic_correct_dir)]&amp;#10;realistic_wrong_images = [os.path.join(realistic_wrong_dir, f) for f in os.listdir(realistic_wrong_dir)]&amp;#10;abstract_correct_images = [os.path.join(abstract_correct_dir, f) for f in os.listdir(abstract_correct_dir)]&amp;#10;abstract_wrong_images = [os.path.join(abstract_wrong_dir, f) for f in os.listdir(abstract_wrong_dir)]&amp;#10;&amp;#10;# Combine images into a trial list&amp;#10;trials = []&amp;#10;for correct, wrong in zip(realistic_correct_images, realistic_wrong_images):&amp;#10;    trials.append({&quot;image_type&quot;: &quot;familiar&quot;, &quot;correct&quot;: correct, &quot;wrong&quot;: wrong})&amp;#10;for correct, wrong in zip(abstract_correct_images, abstract_wrong_images):&amp;#10;    trials.append({&quot;image_type&quot;: &quot;abstract&quot;, &quot;correct&quot;: correct, &quot;wrong&quot;: wrong})&amp;#10;&amp;#10;# Randomize trial order&amp;#10;random.shuffle(trials)&amp;#10;&amp;#10;# Monitor setup&amp;#10;monitor = monitors.Monitor(name='default')&amp;#10;monitor.setSizePix((1920, 1080))&amp;#10;monitor.setWidth(52)  # Width in cm&amp;#10;monitor.setDistance(60)  # Distance in cm&amp;#10;&amp;#10;# Window setup&amp;#10;win = visual.Window(size=(1920, 1080), color=(1, 1, 1), units=&quot;pix&quot;, fullscr=True, monitor=monitor)&amp;#10;&amp;#10;# Instructions&amp;#10;instructions = visual.TextStim(win, text=&quot;In this task, you will see an incomplete image and two options to complete it.\n\nUse the keys 1 (left) and 2 (right) to select the correct piece.\n\nPress any key to start.&quot;, color=(-1, -1, -1))&amp;#10;instructions.draw()&amp;#10;win.flip()&amp;#10;event.waitKeys()&amp;#10;&amp;#10;# Determine if participant is in warm-up group&amp;#10;warm_up = random.choice([True, False])&amp;#10;warm_up_message = &quot;You are part of the warm-up group.&quot; if warm_up else &quot;You will proceed directly to the experiment.&quot;&amp;#10;warm_up_text = visual.TextStim(win, text=warm_up_message, color=(-1, -1, -1))&amp;#10;warm_up_text.draw()&amp;#10;win.flip()&amp;#10;core.wait(2)&amp;#10;&amp;#10;# Trial setup&amp;#10;results = []&amp;#10;clock = core.Clock()&amp;#10;&amp;#10;for trial in trials:&amp;#10;    # Randomize left/right positions for correct and wrong images&amp;#10;    positions = [(-200, 0), (200, 0)]&amp;#10;    random.shuffle(positions)&amp;#10;&amp;#10;    correct_position = positions[0]&amp;#10;    wrong_position = positions[1]&amp;#10;&amp;#10;    correct_image = visual.ImageStim(win, image=trial[&quot;correct&quot;], pos=correct_position, size=(200, 200))&amp;#10;    wrong_image = visual.ImageStim(win, image=trial[&quot;wrong&quot;], pos=wrong_position, size=(200, 200))&amp;#10;&amp;#10;    # Display images&amp;#10;    correct_image.draw()&amp;#10;    wrong_image.draw()&amp;#10;    win.flip()&amp;#10;&amp;#10;    # Record response&amp;#10;    clock.reset()&amp;#10;    keys = event.waitKeys(keyList=[&quot;1&quot;, &quot;2&quot;], timeStamped=clock)&amp;#10;&amp;#10;    # Determine correctness&amp;#10;    response = keys[0][0]&amp;#10;    rt = keys[0][1]&amp;#10;    correct = (response == &quot;1&quot; and correct_position == (-200, 0)) or (response == &quot;2&quot; and correct_position == (200, 0))&amp;#10;&amp;#10;    # Save trial data&amp;#10;    results.append({&amp;#10;        &quot;participant_id&quot;: &quot;001&quot;,  # Replace with actual participant ID system if needed&amp;#10;        &quot;warm_up&quot;: warm_up,&amp;#10;        &quot;image_type&quot;: trial[&quot;image_type&quot;],&amp;#10;        &quot;correct_position&quot;: &quot;left&quot; if correct_position == (-200, 0) else &quot;right&quot;,&amp;#10;        &quot;response&quot;: response,&amp;#10;        &quot;correct&quot;: correct,&amp;#10;        &quot;reaction_time&quot;: rt&amp;#10;    })&amp;#10;&amp;#10;    # Clear screen&amp;#10;    win.flip()&amp;#10;    core.wait(0.5)&amp;#10;&amp;#10;# Calculate summary statistics&amp;#10;familiar_trials = [r for r in results if r[&quot;image_type&quot;] == &quot;familiar&quot;]&amp;#10;abstract_trials = [r for r in results if r[&quot;image_type&quot;] == &quot;abstract&quot;]&amp;#10;&amp;#10;def calc_stats(trials):&amp;#10;    correct_trials = [t for t in trials if t[&quot;correct&quot;]]&amp;#10;    accuracy = len(correct_trials) / len(trials) * 100&amp;#10;    reaction_times = [t[&quot;reaction_time&quot;] for t in trials]&amp;#10;    avg_rt = sum(reaction_times) / len(reaction_times)&amp;#10;    std_rt = (sum((x - avg_rt) ** 2 for x in reaction_times) / len(reaction_times)) ** 0.5&amp;#10;    return accuracy, avg_rt, std_rt&amp;#10;&amp;#10;familiar_acc, familiar_avg_rt, familiar_std_rt = calc_stats(familiar_trials)&amp;#10;abstract_acc, abstract_avg_rt, abstract_std_rt = calc_stats(abstract_trials)&amp;#10;gap_accuracy = familiar_acc - abstract_acc&amp;#10;gap_rt = familiar_avg_rt - abstract_avg_rt&amp;#10;&amp;#10;# Save results to CSV&amp;#10;csv_file = &quot;results.csv&quot;&amp;#10;with open(csv_file, mode=&quot;w&quot;, newline=&quot;&quot;) as file:&amp;#10;    writer = csv.DictWriter(file, fieldnames=[&amp;#10;        &quot;participant_id&quot;, &quot;warm_up&quot;, &quot;image_type&quot;, &quot;correct_position&quot;, &quot;response&quot;, &quot;correct&quot;, &quot;reaction_time&quot;&amp;#10;    ])&amp;#10;    writer.writeheader()&amp;#10;    writer.writerows(results)&amp;#10;&amp;#10;    # Add summary statistics&amp;#10;    writer.writerow({})  # Blank row&amp;#10;    writer.writerow({&amp;#10;        &quot;participant_id&quot;: &quot;001&quot;,&amp;#10;        &quot;warm_up&quot;: warm_up,&amp;#10;        &quot;image_type&quot;: &quot;Summary&quot;,&amp;#10;        &quot;correct_position&quot;: &quot;&quot;,&amp;#10;        &quot;response&quot;: &quot;&quot;,&amp;#10;        &quot;correct&quot;: f&quot;Familiar Accuracy: {familiar_acc:.2f}%&quot;,&amp;#10;        &quot;reaction_time&quot;: f&quot;Familiar Avg RT: {familiar_avg_rt:.2f} ms, Familiar Std RT: {familiar_std_rt:.2f} ms&quot;&amp;#10;    })&amp;#10;    writer.writerow({&amp;#10;        &quot;participant_id&quot;: &quot;001&quot;,&amp;#10;        &quot;warm_up&quot;: warm_up,&amp;#10;        &quot;image_type&quot;: &quot;Summary&quot;,&amp;#10;        &quot;correct_position&quot;: &quot;&quot;,&amp;#10;        &quot;response&quot;: &quot;&quot;,&amp;#10;        &quot;correct&quot;: f&quot;Abstract Accuracy: {abstract_acc:.2f}%&quot;,&amp;#10;        &quot;reaction_time&quot;: f&quot;Abstract Avg RT: {abstract_avg_rt:.2f} ms, Abstract Std RT: {abstract_std_rt:.2f} ms&quot;&amp;#10;    })&amp;#10;    writer.writerow({&amp;#10;        &quot;participant_id&quot;: &quot;001&quot;,&amp;#10;        &quot;warm_up&quot;: warm_up,&amp;#10;        &quot;image_type&quot;: &quot;Gap&quot;,&amp;#10;        &quot;correct_position&quot;: &quot;&quot;,&amp;#10;        &quot;response&quot;: &quot;&quot;,&amp;#10;        &quot;correct&quot;: f&quot;Accuracy Gap: {gap_accuracy:.2f}%&quot;,&amp;#10;        &quot;reaction_time&quot;: f&quot;RT Gap: {gap_rt:.2f} ms&quot;&amp;#10;    })&amp;#10;&amp;#10;# Close window&amp;#10;win.close()&amp;#10;core.quit()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_2" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="trial"/>
+  </Flow>
+</PsychoPy2experiment>
