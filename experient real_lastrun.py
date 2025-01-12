@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on January 05, 2025, at 13:58
+    on January 07, 2025, at 11:20
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -392,6 +392,165 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # Window setup
     win = visual.Window(size=(800, 600), color=(1, 1, 1), units="pix")
+    
+    # Instructions
+    instructions = visual.TextStim(win, text="In this task, you will see an incomplete image and two options to complete it.\n\nUse the keys 1 (left) and 2 (right) to select the correct piece.\n\nPress any key to start.", color=(-1, -1, -1))
+    instructions.draw()
+    win.flip()
+    event.waitKeys()
+    
+    # Determine if participant is in warm-up group
+    warm_up = random.choice([True, False])
+    warm_up_message = "You are part of the warm-up group." if warm_up else "You will proceed directly to the experiment."
+    warm_up_text = visual.TextStim(win, text=warm_up_message, color=(-1, -1, -1))
+    warm_up_text.draw()
+    win.flip()
+    core.wait(2)
+    
+    # Trial setup
+    results = []
+    clock = core.Clock()
+    
+    for trial in trials:
+        # Randomize left/right positions for correct and wrong images
+        positions = [(-200, 0), (200, 0)]
+        random.shuffle(positions)
+    
+        correct_position = positions[0]
+        wrong_position = positions[1]
+    
+        correct_image = visual.ImageStim(win, image=trial["correct"], pos=correct_position, size=(200, 200))
+        wrong_image = visual.ImageStim(win, image=trial["wrong"], pos=wrong_position, size=(200, 200))
+    
+        # Display images
+        correct_image.draw()
+        wrong_image.draw()
+        win.flip()
+    
+        # Record response
+        clock.reset()
+        keys = event.waitKeys(keyList=["1", "2"], timeStamped=clock)
+    
+        # Determine correctness
+        response = keys[0][0]
+        rt = keys[0][1]
+        correct = (response == "1" and correct_position == (-200, 0)) or (response == "2" and correct_position == (200, 0))
+    
+        # Save trial data
+        results.append({
+            "participant_id": "001",  # Replace with actual participant ID system if needed
+            "warm_up": warm_up,
+            "image_type": trial["image_type"],
+            "correct_position": "left" if correct_position == (-200, 0) else "right",
+            "response": response,
+            "correct": correct,
+            "reaction_time": rt
+        })
+    
+        # Clear screen
+        win.flip()
+        core.wait(0.5)
+    
+    # Calculate summary statistics
+    familiar_trials = [r for r in results if r["image_type"] == "familiar"]
+    abstract_trials = [r for r in results if r["image_type"] == "abstract"]
+    
+    def calc_stats(trials):
+        correct_trials = [t for t in trials if t["correct"]]
+        accuracy = len(correct_trials) / len(trials) * 100
+        reaction_times = [t["reaction_time"] for t in trials]
+        avg_rt = sum(reaction_times) / len(reaction_times)
+        std_rt = (sum((x - avg_rt) ** 2 for x in reaction_times) / len(reaction_times)) ** 0.5
+        return accuracy, avg_rt, std_rt
+    
+    familiar_acc, familiar_avg_rt, familiar_std_rt = calc_stats(familiar_trials)
+    abstract_acc, abstract_avg_rt, abstract_std_rt = calc_stats(abstract_trials)
+    gap_accuracy = familiar_acc - abstract_acc
+    gap_rt = familiar_avg_rt - abstract_avg_rt
+    
+    # Save results to CSV
+    csv_file = "results.csv"
+    with open(csv_file, mode="w", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=[
+            "participant_id", "warm_up", "image_type", "correct_position", "response", "correct", "reaction_time"
+        ])
+        writer.writeheader()
+        writer.writerows(results)
+    
+        # Add summary statistics
+        writer.writerow({})  # Blank row
+        writer.writerow({
+            "participant_id": "001",
+            "warm_up": warm_up,
+            "image_type": "Summary",
+            "correct_position": "",
+            "response": "",
+            "correct": f"Familiar Accuracy: {familiar_acc:.2f}%",
+            "reaction_time": f"Familiar Avg RT: {familiar_avg_rt:.2f} ms, Familiar Std RT: {familiar_std_rt:.2f} ms"
+        })
+        writer.writerow({
+            "participant_id": "001",
+            "warm_up": warm_up,
+            "image_type": "Summary",
+            "correct_position": "",
+            "response": "",
+            "correct": f"Abstract Accuracy: {abstract_acc:.2f}%",
+            "reaction_time": f"Abstract Avg RT: {abstract_avg_rt:.2f} ms, Abstract Std RT: {abstract_std_rt:.2f} ms"
+        })
+        writer.writerow({
+            "participant_id": "001",
+            "warm_up": warm_up,
+            "image_type": "Gap",
+            "correct_position": "",
+            "response": "",
+            "correct": f"Accuracy Gap: {gap_accuracy:.2f}%",
+            "reaction_time": f"RT Gap: {gap_rt:.2f} ms"
+        })
+    
+    # Close window
+    win.close()
+    core.quit()
+    
+    # Run 'Begin Experiment' code from code_2
+    from psychopy import visual, core, event, data, monitors
+    import random
+    import csv
+    import os
+    
+    # Define current directory
+    _thisDir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(_thisDir)
+    
+    # Paths to image directories
+    realistic_correct_dir = '/mnt/data/realistic_photos/correct_cuts'
+    realistic_wrong_dir = '/mnt/data/realistic_photos/wrong_cuts'
+    abstract_correct_dir = '/mnt/data/abstract_photos/correct_cuts'
+    abstract_wrong_dir = '/mnt/data/abstract_photos/wrong_cuts'
+    
+    # Load image file paths
+    realistic_correct_images = [os.path.join(realistic_correct_dir, f) for f in os.listdir(realistic_correct_dir)]
+    realistic_wrong_images = [os.path.join(realistic_wrong_dir, f) for f in os.listdir(realistic_wrong_dir)]
+    abstract_correct_images = [os.path.join(abstract_correct_dir, f) for f in os.listdir(abstract_correct_dir)]
+    abstract_wrong_images = [os.path.join(abstract_wrong_dir, f) for f in os.listdir(abstract_wrong_dir)]
+    
+    # Combine images into a trial list
+    trials = []
+    for correct, wrong in zip(realistic_correct_images, realistic_wrong_images):
+        trials.append({"image_type": "familiar", "correct": correct, "wrong": wrong})
+    for correct, wrong in zip(abstract_correct_images, abstract_wrong_images):
+        trials.append({"image_type": "abstract", "correct": correct, "wrong": wrong})
+    
+    # Randomize trial order
+    random.shuffle(trials)
+    
+    # Monitor setup
+    monitor = monitors.Monitor(name='default')
+    monitor.setSizePix((1920, 1080))
+    monitor.setWidth(52)  # Width in cm
+    monitor.setDistance(60)  # Distance in cm
+    
+    # Window setup
+    win = visual.Window(size=(1920, 1080), color=(1, 1, 1), units="pix", fullscr=True, monitor=monitor)
     
     # Instructions
     instructions = visual.TextStim(win, text="In this task, you will see an incomplete image and two options to complete it.\n\nUse the keys 1 (left) and 2 (right) to select the correct piece.\n\nPress any key to start.", color=(-1, -1, -1))

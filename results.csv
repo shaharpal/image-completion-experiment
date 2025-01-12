@@ -1,53 +1,39 @@
-participant_id,warm_up,image_type,correct_position,response,correct,reaction_time
-001,True,abstract,right,1,False,0.824458499904722
-001,True,abstract,right,2,True,0.026399099733680487
-001,True,familiar,right,1,False,0.04856509994715452
-001,True,abstract,left,2,False,0.08515570033341646
-001,True,familiar,right,1,False,0.046552099753171206
-001,True,abstract,left,2,False,0.06632639979943633
-001,True,familiar,left,1,True,0.1058070003055036
-001,True,abstract,left,1,True,0.39148550014942884
-001,True,familiar,right,1,False,1.3043064000084996
-001,True,familiar,right,1,False,0.3071205001324415
-001,True,familiar,left,2,False,0.28574040019884706
-001,True,abstract,left,1,True,1.2268906002864242
-001,True,abstract,right,2,True,1.1787474998272955
-001,True,abstract,right,2,True,0.5181181002408266
-001,True,familiar,right,2,True,0.6195000000298023
-001,True,familiar,left,2,False,0.28510560002177954
-001,True,familiar,left,1,True,0.6118948003277183
-001,True,abstract,left,1,True,1.394597599748522
-001,True,abstract,left,1,True,0.9759372002445161
-001,True,familiar,left,1,True,0.689189599826932
-001,True,familiar,right,2,True,0.6779306996613741
-001,True,abstract,left,1,True,0.5862222001887858
+9,TRUE,Summary,,,,"Familiar Avg RT: 1.66 ms, Familiar Std RT: 0.91 ms"
+9,TRUE,Summary,,,Abstract Accuracy: 100.00%,"Abstract Avg RT: 1.66 ms, Abstract Std RT: 0.95 ms"
+9,TRUE,Gap,,,Accuracy Gap: 0.00%,RT Gap: -0.00 ms
+10,True,familiar,right,2,True,1.6640947996638715
+10,True,abstract,left,1,True,0.7379463003017008
+10,True,abstract,left,1,True,1.3617857000790536
+10,True,abstract,right,2,True,0.7102264002896845
+10,True,familiar,right,2,True,1.0569172999821603
+10,True,familiar,left,1,True,0.5614549000747502
+10,True,familiar,right,2,True,0.660544500220567
+10,True,abstract,right,2,True,1.3405835996381938
+10,True,abstract,right,1,False,1.1847311002202332
+10,True,abstract,right,1,False,6.133352499920875
+10,True,abstract,left,1,True,1.0377580001950264
+10,True,familiar,left,1,True,1.0914795999415219
+10,True,familiar,right,2,True,0.6716682002879679
+10,True,familiar,left,1,True,2.590925899799913
+10,True,abstract,left,2,False,5.250636599957943
+10,True,abstract,right,2,True,1.3867155001498759
+10,True,abstract,right,2,True,1.1933547002263367
+10,True,familiar,left,1,True,0.7860372001305223
+10,True,abstract,left,1,True,1.202542900107801
+10,True,familiar,left,1,True,1.7613332998007536
+10,True,familiar,right,2,True,1.1206513000652194
+10,True,familiar,left,2,False,2.4868483999744058
+10,True,familiar,left,1,True,0.9112958996556699
+10,True,abstract,left,1,True,0.8938313000835478
+10,True,abstract,right,2,True,4.653003199957311
+10,True,familiar,left,1,True,2.2491566999815404
+10,True,abstract,right,2,True,1.1686355001293123
+10,True,abstract,right,2,True,0.6130104996263981
+10,True,familiar,right,2,True,0.819486299995333
+10,True,familiar,left,1,True,1.3708493001759052
+10,True,familiar,left,1,True,0.9464203002862632
+10,True,abstract,right,1,False,1.4513640003278852
 ,,,,,,
-001,True,Summary,,,Familiar Accuracy: 45.45%,"Familiar Avg RT: 0.45 ms, Familiar Std RT: 0.36 ms"
-001,True,Summary,,,Abstract Accuracy: 72.73%,"Abstract Avg RT: 0.66 ms, Abstract Std RT: 0.47 ms"
-001,True,Gap,,,Accuracy Gap: -27.27%,RT Gap: -0.21 ms
-2,False,abstract,right,2,True,2.9922641003504395
-2,False,familiar,right,2,True,0.9084044001065195
-2,False,familiar,right,2,True,0.5600331998430192
-2,False,abstract,left,1,True,0.7069618999958038
-2,False,familiar,left,1,True,0.6751521001569927
-2,False,abstract,left,1,True,0.7227151999250054
-2,False,abstract,right,2,True,0.5563731002621353
-2,False,abstract,left,1,True,0.83369529992342
-2,False,familiar,right,2,True,0.6021541999652982
-2,False,abstract,right,2,True,0.6427699001505971
-2,False,abstract,right,2,True,0.7882299995981157
-2,False,familiar,right,2,True,0.5888432003557682
-2,False,familiar,right,2,True,0.5128982001915574
-2,False,familiar,left,1,True,0.6556146997027099
-2,False,familiar,left,1,True,0.5598403997719288
-2,False,familiar,left,1,True,0.6743548000231385
-2,False,abstract,left,1,True,0.775906200055033
-2,False,abstract,left,1,True,0.5333075001835823
-2,False,familiar,left,1,True,0.7770463000051677
-2,False,abstract,left,1,True,0.9509973996318877
-2,False,familiar,right,2,True,1.3811094001866877
-2,False,abstract,left,1,True,0.5961160999722779
-,,,,,,
-2,False,Summary,,,Familiar Accuracy: 100.00%,"Familiar Avg RT: 0.72 ms, Familiar Std RT: 0.24 ms"
-2,False,Summary,,,Abstract Accuracy: 100.00%,"Abstract Avg RT: 0.92 ms, Abstract Std RT: 0.67 ms"
-2,False,Gap,,,Accuracy Gap: 0.00%,RT Gap: -0.20 ms
+10,True,Summary,,,Familiar Accuracy: 93.75%,"Familiar Avg RT: 1.30 ms, Familiar Std RT: 0.64 ms"
+10,True,Summary,,,Abstract Accuracy: 75.00%,"Abstract Avg RT: 1.89 ms, Abstract Std RT: 1.70 ms"
+10,True,Gap,,,Accuracy Gap: 18.75%,RT Gap: -0.60 ms
